@@ -1,6 +1,8 @@
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 
+#I changed this comment
+
 stemmer = LancasterStemmer()
 
 import numpy
