@@ -104,7 +104,11 @@ def bag_of_words(s, words):
 
 #Ask user for some kind of sentence and spit out a response.
 def chat():
-    print('Start talking with the bot! (Type "quit" to stop)')
+
+    intnts = data["intents"]
+    greetings = intnts[0]
+    greeting = random.choice(greetings['responses'])
+    print(greeting)
     while True:
             inp = input("You: ")
             if inp.lower() == "quit":
